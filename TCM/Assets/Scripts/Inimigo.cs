@@ -6,8 +6,8 @@ public class Inimigo : MonoBehaviour
 {
     Animator imagem;
 
-    [SerializeField]
-    Transform jogador;
+
+    public Transform jogador;
 
     float campodevisao;
     float velocidade = 3.0f;
@@ -31,12 +31,12 @@ public class Inimigo : MonoBehaviour
             {
                 if (transform.position.x < jogador.position.x)
                 {
-                    transform.localScale = new Vector2(4, 4);
+                    transform.localScale = new Vector2(3.5f, 3.5f);
                     imagem.Play("soldado_atento");
                 }
                 else
                 {
-                    transform.localScale = new Vector2(-4, 4);
+                    transform.localScale = new Vector2(-3.5f, 3.5f);
                     imagem.Play("soldado_atento");
                 }
             }
