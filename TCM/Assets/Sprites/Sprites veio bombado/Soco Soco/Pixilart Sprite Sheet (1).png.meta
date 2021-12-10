@@ -1,7 +1,37 @@
 fileFormatVersion: 2
 guid: 186147d2d3192fa4b85b9161a4881da0
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -8818838129630314693
+    second: Veio_soco1
+  - first:
+      213: -5681305006788038548
+    second: Veio_soco2
+  - first:
+      213: -972187126663615547
+    second: Veio_soco3
+  - first:
+      213: -957114497530620572
+    second: Veio_soco4
+  - first:
+      213: -3795249474357856861
+    second: Veio_soco5
+  - first:
+      213: 2931264181542036172
+    second: Veio_soco6
+  - first:
+      213: -6426425326550701654
+    second: Veio_soco7
+  - first:
+      213: -2132474578002869015
+    second: Veio_soco8
+  - first:
+      213: 2749156271112713481
+    second: Veio_soco9
+  - first:
+      213: -4982585880956429347
+    second: Veio_soco10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +71,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +105,231 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Veio_soco1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 843
+        height: 1039
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3ff6bff1713d9580800000000000000
+      internalID: -8818838129630314693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veio_soco2
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 48
+        width: 714
+        height: 1039
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6030c97233f721b0800000000000000
+      internalID: -5681305006788038548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veio_soco3
+      rect:
+        serializedVersion: 2
+        x: 2349
+        y: 48
+        width: 826
+        height: 1039
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cbe10c85f81282f0800000000000000
+      internalID: -972187126663615547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veio_soco4
+      rect:
+        serializedVersion: 2
+        x: 3502
+        y: 48
+        width: 950
+        height: 1039
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4659f4d7f65a7b2f0800000000000000
+      internalID: -957114497530620572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veio_soco5
+      rect:
+        serializedVersion: 2
+        x: 4655
+        y: 48
+        width: 804
+        height: 1039
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a579ee06b0945bc0800000000000000
+      internalID: -3795249474357856861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veio_soco6
+      rect:
+        serializedVersion: 2
+        x: 5808
+        y: 48
+        width: 714
+        height: 1039
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc2a3ab1e31fda820800000000000000
+      internalID: 2931264181542036172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veio_soco7
+      rect:
+        serializedVersion: 2
+        x: 6961
+        y: 48
+        width: 838
+        height: 1039
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa92f53d630c0d6a0800000000000000
+      internalID: -6426425326550701654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veio_soco8
+      rect:
+        serializedVersion: 2
+        x: 8109
+        y: 48
+        width: 916
+        height: 1039
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4869d6bade762e0800000000000000
+      internalID: -2132474578002869015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veio_soco9
+      rect:
+        serializedVersion: 2
+        x: 9262
+        y: 48
+        width: 989
+        height: 1039
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 905f5bb1017f62620800000000000000
+      internalID: 2749156271112713481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Veio_soco10
+      rect:
+        serializedVersion: 2
+        x: 10415
+        y: 48
+        width: 916
+        height: 1039
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb17b64a8c4adab0800000000000000
+      internalID: -4982585880956429347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
