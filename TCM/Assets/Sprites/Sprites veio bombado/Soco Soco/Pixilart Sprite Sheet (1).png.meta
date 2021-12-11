@@ -4,34 +4,34 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -8818838129630314693
-    second: Veio_soco1
+    second: Pixilart Sprite Sheet (1)_0
   - first:
       213: -5681305006788038548
-    second: Veio_soco2
+    second: Pixilart Sprite Sheet (1)_1
   - first:
       213: -972187126663615547
-    second: Veio_soco3
+    second: Pixilart Sprite Sheet (1)_2
   - first:
       213: -957114497530620572
-    second: Veio_soco4
+    second: Pixilart Sprite Sheet (1)_3
   - first:
       213: -3795249474357856861
-    second: Veio_soco5
+    second: Pixilart Sprite Sheet (1)_4
   - first:
       213: 2931264181542036172
-    second: Veio_soco6
+    second: Pixilart Sprite Sheet (1)_5
   - first:
       213: -6426425326550701654
-    second: Veio_soco7
+    second: Pixilart Sprite Sheet (1)_6
   - first:
       213: -2132474578002869015
-    second: Veio_soco8
+    second: Pixilart Sprite Sheet (1)_7
   - first:
       213: 2749156271112713481
-    second: Veio_soco9
+    second: Pixilart Sprite Sheet (1)_8
   - first:
       213: -4982585880956429347
-    second: Veio_soco10
+    second: Pixilart Sprite Sheet (1)_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -121,15 +121,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Veio_soco1
+      name: Pixilart Sprite Sheet (1)_0
       rect:
         serializedVersion: 2
         x: 48
         y: 48
         width: 843
         height: 1039
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -142,15 +142,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Veio_soco2
+      name: Pixilart Sprite Sheet (1)_1
       rect:
         serializedVersion: 2
         x: 1201
         y: 48
         width: 714
         height: 1039
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -163,15 +163,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Veio_soco3
+      name: Pixilart Sprite Sheet (1)_2
       rect:
         serializedVersion: 2
         x: 2349
         y: 48
         width: 826
         height: 1039
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -184,15 +184,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Veio_soco4
+      name: Pixilart Sprite Sheet (1)_3
       rect:
         serializedVersion: 2
         x: 3502
         y: 48
         width: 950
         height: 1039
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -205,15 +205,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Veio_soco5
+      name: Pixilart Sprite Sheet (1)_4
       rect:
         serializedVersion: 2
         x: 4655
         y: 48
         width: 804
         height: 1039
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -226,15 +226,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Veio_soco6
+      name: Pixilart Sprite Sheet (1)_5
       rect:
         serializedVersion: 2
         x: 5808
         y: 48
         width: 714
         height: 1039
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -247,15 +247,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Veio_soco7
+      name: Pixilart Sprite Sheet (1)_6
       rect:
         serializedVersion: 2
         x: 6961
         y: 48
         width: 838
         height: 1039
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -268,15 +268,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Veio_soco8
+      name: Pixilart Sprite Sheet (1)_7
       rect:
         serializedVersion: 2
         x: 8109
         y: 48
         width: 916
         height: 1039
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -289,15 +289,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Veio_soco9
+      name: Pixilart Sprite Sheet (1)_8
       rect:
         serializedVersion: 2
         x: 9262
         y: 48
         width: 989
         height: 1039
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -310,15 +310,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Veio_soco10
+      name: Pixilart Sprite Sheet (1)_9
       rect:
         serializedVersion: 2
         x: 10415
         y: 48
         width: 916
         height: 1039
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

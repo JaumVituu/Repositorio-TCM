@@ -8,26 +8,30 @@ public class Inimigo : MonoBehaviour
 
 
     public Transform jogador;
-
     float campodevisao;
     float velocidade;
     Rigidbody2D rb2d;
     float escalaX;
     float escalaY;
-
+    float intervaloTiro;
+    public float distancia;
+    public int direcao;
     // Start is called before the first frame update
     void Start()
     {
         imagem = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
+        intervaloTiro = 0f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        float distancia = Vector2.Distance(transform.position, jogador.position);
+        
+        distancia = Vector2.Distance(transform.position, jogador.position);
         if (gameObject.tag == "Inimigo")
         {
+            
             campodevisao = 10.0f;
             if (distancia < campodevisao)
             {
@@ -36,7 +40,8 @@ public class Inimigo : MonoBehaviour
                     escalaX = 3.5f;
                     escalaY = 3.5f;
                     rotacao();
-                    imagem.Play("soldado_atento");
+                    imagem.Play("soldado_atento");  
+                    direcao = 1;
                 }
                 else
                 {
@@ -44,7 +49,9 @@ public class Inimigo : MonoBehaviour
                     escalaY = 3.5f;
                     rotacao();
                     imagem.Play("soldado_atento");
+                    direcao = 0;
                 }
+                Atacar();
             }
             else
             {
@@ -124,4 +131,32 @@ public class Inimigo : MonoBehaviour
     public void morte() {
         Destroy(gameObject);
     }
+    void Atacar()
+    {
+        float distancia = Vector2.Distance(transform.position, jogador.position);
+        campodevisao = 10.0f;
+        if (gameObject.tag == "Inimigo")
+        {    
+            intervaloTiro += Time.deltaTime;
+            if (distancia < campodevisao)
+            {
+                if (intervaloTiro >= 1f)
+                {
+                    if (direcao == 0)
+                    {
+                        GameObject TiroPrefab = Resources.Load<GameObject>("Tiro");
+                        float projetilY = 1.7f;
+                        Instantiate(TiroPrefab, transform.position + new Vector3(0, projetilY, 0), Quaternion.identity);
+                        Debug.Log("Resetou");
+                        intervaloTiro = 0f;
+                    }                    
+                }
+            }
+            else
+            {
+                intervaloTiro = 0f;
+            }
+        }
+    }
+
 }

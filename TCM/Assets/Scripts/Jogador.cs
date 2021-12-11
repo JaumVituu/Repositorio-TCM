@@ -107,7 +107,7 @@ public class Jogador : MonoBehaviour
         }
         void OnTriggerEnter2D(Collider2D colisao) {
 
-        if (colisao.CompareTag("Cachorro")){
+        if (colisao.CompareTag("Cachorro") || colisao.CompareTag("Projetil")){
             SceneManager.LoadScene(Cena);
             }
         }
