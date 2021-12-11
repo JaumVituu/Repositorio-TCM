@@ -1,7 +1,64 @@
 fileFormatVersion: 2
 guid: 2db5371ef3fc4204197e7eadc2b02f31
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -8818838129630314693
+    second: Persona_parada1
+  - first:
+      213: -5681305006788038548
+    second: Persona_parada2
+  - first:
+      213: -972187126663615547
+    second: Persona_parada3
+  - first:
+      213: -957114497530620572
+    second: Persona_parada4
+  - first:
+      213: -3795249474357856861
+    second: Persona_parada5
+  - first:
+      213: 2931264181542036172
+    second: Persona_parada6
+  - first:
+      213: -6426425326550701654
+    second: Persona_parada7
+  - first:
+      213: -2132474578002869015
+    second: Persona_parada8
+  - first:
+      213: 2749156271112713481
+    second: Persona_parada9
+  - first:
+      213: -4982585880956429347
+    second: Persona_parada10
+  - first:
+      213: -4091626104644080322
+    second: Personagem_sobrecarga1
+  - first:
+      213: -7754248188090404542
+    second: Personagem_sobrecarga2
+  - first:
+      213: -696954015831872031
+    second: Personagem_sobrecarga3
+  - first:
+      213: -7542898644249699338
+    second: Personagem_sobrecarga4
+  - first:
+      213: -5777851041144773028
+    second: Personagem_sobrecarga5
+  - first:
+      213: 9051030102230988229
+    second: Personagem_sobrecarga6
+  - first:
+      213: -164881370106019081
+    second: Personagem_sobrecarga7
+  - first:
+      213: -9066448454499651217
+    second: Personagem_sobrecarga8
+  - first:
+      213: -1088449506263511326
+    second: Personagem_sobrecarga9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +98,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +132,420 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Persona_parada1
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 60
+        width: 808
+        height: 1126
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3ff6bff1713d9580800000000000000
+      internalID: -8818838129630314693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Persona_parada2
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 58
+        width: 809
+        height: 1105
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6030c97233f721b0800000000000000
+      internalID: -5681305006788038548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Persona_parada3
+      rect:
+        serializedVersion: 2
+        x: 2719
+        y: 57
+        width: 809
+        height: 1093
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cbe10c85f81282f0800000000000000
+      internalID: -972187126663615547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Persona_parada4
+      rect:
+        serializedVersion: 2
+        x: 3989
+        y: 60
+        width: 820
+        height: 1103
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4659f4d7f65a7b2f0800000000000000
+      internalID: -957114497530620572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Persona_parada5
+      rect:
+        serializedVersion: 2
+        x: 5269
+        y: 63
+        width: 820
+        height: 1127
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a579ee06b0945bc0800000000000000
+      internalID: -3795249474357856861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Persona_parada6
+      rect:
+        serializedVersion: 2
+        x: 6554
+        y: 58
+        width: 808
+        height: 1127
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc2a3ab1e31fda820800000000000000
+      internalID: 2931264181542036172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Persona_parada7
+      rect:
+        serializedVersion: 2
+        x: 7833
+        y: 59
+        width: 813
+        height: 1127
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa92f53d630c0d6a0800000000000000
+      internalID: -6426425326550701654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Persona_parada8
+      rect:
+        serializedVersion: 2
+        x: 9117
+        y: 59
+        width: 813
+        height: 1127
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4869d6bade762e0800000000000000
+      internalID: -2132474578002869015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Persona_parada9
+      rect:
+        serializedVersion: 2
+        x: 10401
+        y: 59
+        width: 804
+        height: 1103
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 905f5bb1017f62620800000000000000
+      internalID: 2749156271112713481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Persona_parada10
+      rect:
+        serializedVersion: 2
+        x: 11685
+        y: 59
+        width: 799
+        height: 1103
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb17b64a8c4adab0800000000000000
+      internalID: -4982585880956429347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personagem_sobrecarga1
+      rect:
+        serializedVersion: 2
+        x: 12957
+        y: 57
+        width: 808
+        height: 1103
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3d69f67cbf9737c0800000000000000
+      internalID: -4091626104644080322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personagem_sobrecarga2
+      rect:
+        serializedVersion: 2
+        x: 14239
+        y: 59
+        width: 808
+        height: 1126
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241b7a05b50636490800000000000000
+      internalID: -7754248188090404542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personagem_sobrecarga3
+      rect:
+        serializedVersion: 2
+        x: 15521
+        y: 59
+        width: 801
+        height: 1128
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed2f85e30ce356f0800000000000000
+      internalID: -696954015831872031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personagem_sobrecarga4
+      rect:
+        serializedVersion: 2
+        x: 16807
+        y: 59
+        width: 796
+        height: 1103
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fb98b4a5ad325790800000000000000
+      internalID: -7542898644249699338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personagem_sobrecarga5
+      rect:
+        serializedVersion: 2
+        x: 18101
+        y: 55
+        width: 796
+        height: 1107
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c56e1772713f0dfa0800000000000000
+      internalID: -5777851041144773028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personagem_sobrecarga6
+      rect:
+        serializedVersion: 2
+        x: 19357
+        y: 59
+        width: 810
+        height: 1089
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c578de6ce7bb9d70800000000000000
+      internalID: 9051030102230988229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personagem_sobrecarga7
+      rect:
+        serializedVersion: 2
+        x: 20641
+        y: 59
+        width: 810
+        height: 1089
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f240c8744936bdf0800000000000000
+      internalID: -164881370106019081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personagem_sobrecarga8
+      rect:
+        serializedVersion: 2
+        x: 21922
+        y: 61
+        width: 807
+        height: 1102
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61b82faa218d2280800000000000000
+      internalID: -9066448454499651217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personagem_sobrecarga9
+      rect:
+        serializedVersion: 2
+        x: 23198
+        y: 59
+        width: 807
+        height: 1102
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eec63fd0fc05e0f0800000000000000
+      internalID: -1088449506263511326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
