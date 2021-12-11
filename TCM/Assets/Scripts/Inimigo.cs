@@ -10,8 +10,10 @@ public class Inimigo : MonoBehaviour
     public Transform jogador;
 
     float campodevisao;
-    float velocidade = 3.0f;
+    float velocidade;
     Rigidbody2D rb2d;
+    float escalaX;
+    float escalaY;
 
     // Start is called before the first frame update
     void Start()
@@ -31,12 +33,16 @@ public class Inimigo : MonoBehaviour
             {
                 if (transform.position.x < jogador.position.x)
                 {
-                    transform.localScale = new Vector2(3.5f, 3.5f);
+                    escalaX = 3.5f;
+                    escalaY = 3.5f;
+                    rotacao();
                     imagem.Play("soldado_atento");
                 }
                 else
                 {
-                    transform.localScale = new Vector2(-3.5f, 3.5f);
+                    escalaX = -3.5f;
+                    escalaY = 3.5f;
+                    rotacao();
                     imagem.Play("soldado_atento");
                 }
             }
@@ -52,20 +58,27 @@ public class Inimigo : MonoBehaviour
             {
                 if (transform.position.x < jogador.position.x)
                 {
-                    rb2d.velocity = new Vector2(velocidade, 0);
-                    transform.localScale = new Vector2(-3, 3);
+                    velocidade = 3.0f;
+                    escalaX = -3.0f;
+                    escalaY = 3.0f;
+                    movimento();
+                    rotacao();
                     imagem.Play("Cachorro_andando");
                 }
                 else
                 {
-                    rb2d.velocity = new Vector2(-velocidade, 0);
-                    transform.localScale = new Vector2(3, 3);
+                    velocidade = -3.0f;
+                    escalaX = 3.0f;
+                    escalaY = 3.0f;
+                    movimento();
+                    rotacao();
                     imagem.Play("Cachorro_andando");
                 }
             }
             else
             {
-                rb2d.velocity = new Vector2(0, 0);
+                velocidade = 0;
+                movimento();
                 imagem.Play("Cachorro_parado");
             }
         }
@@ -77,24 +90,38 @@ public class Inimigo : MonoBehaviour
 
                 if (transform.position.x < jogador.position.x)
                 {
-
-                    rb2d.velocity = new Vector2(velocidade, 0);
-                    transform.localScale = new Vector2(0.4f, 0.4f);
+                    velocidade = 3.0f;
+                    escalaX = 0.4f;
+                    escalaY = 0.4f;
+                    movimento();
+                    rotacao();
                     imagem.Play("Veio_andando");
                 }
                 else
                 {
-
-                    rb2d.velocity = new Vector2(-velocidade, 0);
-                    transform.localScale = new Vector2(-0.4f, 0.4f);
+                    velocidade = -3.0f;
+                    escalaX = -0.4f;
+                    escalaY = 0.4f;
+                    movimento();
+                    rotacao();
                     imagem.Play("Veio_andando");
                 }
 
             }
             else {
-                rb2d.velocity = new Vector2(0, 0);
+                velocidade = 0;
+                movimento();
                 imagem.Play("Veio_parado");
             }
         }
+    }
+    void movimento() {
+        rb2d.velocity = new Vector2(velocidade, 0);
+    }
+    void rotacao() {
+        transform.localScale = new Vector2(escalaX, escalaY);
+    }
+    public void morte() {
+        Destroy(gameObject);
     }
 }

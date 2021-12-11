@@ -9,32 +9,41 @@ public class Jogador : MonoBehaviour
 
     Animator animacao;
     Rigidbody2D movimento;
-    SpriteRenderer imagem;
-    public Text vidas;
-    float vida;
-    bool invulnerabilidade = false;
 
     bool isGrounded;
     public Transform groundCheck;
 
-    private float velocidadeandar = 6.0f;
-    private float velocidadepular = 7.0f;
+    public Text tempo;
+    float tempomorte;
+    float velocidadeandar;
+    float velocidadepular = 7.0f;
+    float escalaX;
+    float escalaY;
+    public Transform ataqueCheck;
+    float areadoataque = 1.2f;
+    public LayerMask CamadaInimigos;
 
     public string Cena;
     void Start()
     {
         animacao = GetComponent<Animator>();
         movimento = GetComponent<Rigidbody2D>();
-        imagem = GetComponent<SpriteRenderer>();
-        vida = 3;
+        tempomorte = 3;
     }
 
     private void Update()
     {
-        if (gameObject.tag == "Jogador")
-        {
-            vidas.text = vida.ToString("0");
+        if (Input.GetKey("z")) {
 
+            ataque();
+        }
+        
+            if (tempomorte < 0) {
+
+                SceneManager.LoadScene(Cena);
+            }
+            tempomorte = tempomorte - Time.deltaTime;
+            tempo.text = tempomorte.ToString("0");
             if (Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground")))
             {
                 isGrounded = true;
@@ -46,65 +55,68 @@ public class Jogador : MonoBehaviour
             }
             if (Input.GetKey("d"))
             {
-                movimento.velocity = new Vector2(velocidadeandar, movimento.velocity.y);
+                tempomorte = 3;
+                escalaX = 0.2f;
+                escalaY = 0.2f;
+                velocidadeandar = 7.0f;
+                movimentacao();
 
                 if (isGrounded)
                     //animacao.Play("");
 
-                    transform.localScale = new Vector2(0.2f, 0.2f);
+                    rotacao();
             }
             else if (Input.GetKey("a"))
             {
-                movimento.velocity = new Vector2(-velocidadeandar, movimento.velocity.y);
+                tempomorte = 3;
+                escalaX = -0.2f;
+                escalaY = 0.2f;
+                velocidadeandar = -7.0f;
+                movimentacao();
 
                 if (isGrounded)
                     //animacao.Play("");
 
-                    transform.localScale = new Vector2(-0.2f, 0.2f);
+                    rotacao();
             }
             else
             {
                 if (isGrounded)
                     animacao.Play("Persona_parada");
-
-                movimento.velocity = new Vector2(0, movimento.velocity.y);
+                velocidadeandar = 0f;
+                movimentacao();
             }
             if (Input.GetKey("space") && isGrounded)
             {
-                movimento.velocity = new Vector2(movimento.velocity.x, velocidadepular);
+                pulo();
                 //animacao.Play("");
             }
+            if (!isGrounded) {
+                tempomorte = 3;
+            }
 
-
-        }
     }
-
-    IEnumerator Invulneravel() {
-        for (float i = 0; i < 1; i += 0.1f) {
-            imagem.enabled = false;
-            yield return new WaitForSeconds(0.1f);
-            imagem.enabled = true;
-            yield return new WaitForSeconds(0.1f);
+        void movimentacao() {
+        movimento.velocity = new Vector2(velocidadeandar, movimento.velocity.y);
         }
-        invulnerabilidade = false;
-    }
-        void Dano()
-        {
-            invulnerabilidade = true;
-            vida = vida - 1;
-            StartCoroutine (Invulneravel());
-
-            if (vida < 1)
-            {
-                SceneManager.LoadScene(Cena);
-             }
+        void rotacao() {
+        transform.localScale = new Vector2(escalaX, escalaY);
+        }
+        void pulo() {
+        movimento.velocity = new Vector2(movimento.velocity.x, velocidadepular);
         }
         void OnTriggerEnter2D(Collider2D colisao) {
 
         if (colisao.CompareTag("Cachorro")){
-            if (!invulnerabilidade) {
-                Dano();
+            SceneManager.LoadScene(Cena);
             }
         }
+        void ataque() {
+        Collider2D[] acertouInimigo = Physics2D.OverlapCircleAll(ataqueCheck.position, areadoataque, CamadaInimigos);
+
+        foreach (Collider2D Inimigo in acertouInimigo) {
+
+            Inimigo.GetComponent<Inimigo>().morte();
         }
-    }
+        }
+        }
