@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2312712793879485219}
   - component: {fileID: -6331802450753058612}
   - component: {fileID: 3447126284114952480}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tiro
   m_TagString: Projetil
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 20
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 0.9326622, b: 0, a: 1}
   m_FlipX: 0

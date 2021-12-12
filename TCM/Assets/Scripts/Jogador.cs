@@ -38,6 +38,7 @@ public class Jogador : MonoBehaviour
             if(isGrounded)
             ataqueachefe();
             ataqueainimigos();
+            animacao.Play("Hitting");
 
         }
         
@@ -54,7 +55,6 @@ public class Jogador : MonoBehaviour
             else
             {
                 isGrounded = false;
-                //animacao.Play("");
             }
             if (Input.GetKey("d"))
             {
@@ -65,7 +65,7 @@ public class Jogador : MonoBehaviour
                 movimentacao();
 
                 if (isGrounded)
-                    //animacao.Play("");
+                    animacao.Play("Running");
 
                     rotacao();
             }
@@ -78,7 +78,7 @@ public class Jogador : MonoBehaviour
                 movimentacao();
 
                 if (isGrounded)
-                    //animacao.Play("");
+                    animacao.Play("Running");
 
                     rotacao();
             }
@@ -92,7 +92,6 @@ public class Jogador : MonoBehaviour
             if (Input.GetKey("space") && isGrounded)
             {
                 pulo();
-                //animacao.Play("");
             }
             if (!isGrounded) {
                 tempomorte = 3;

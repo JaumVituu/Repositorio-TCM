@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1002002317408720879}
   - component: {fileID: 1002002317408720878}
-  - component: {fileID: 1002002317408720873}
   - component: {fileID: 1002002317408720872}
   - component: {fileID: 1002002317408720875}
   - component: {fileID: 1002002317408720876}
+  - component: {fileID: 3459306096456619291}
   m_Layer: 7
   m_Name: Soldado_parado 1
   m_TagString: Inimigo
@@ -86,19 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1002002317408720873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1002002317408720874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1eff28f1bab0b9a44899cbb02db5f9b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jogador: {fileID: 0}
 --- !u!50 &1002002317408720872
 Rigidbody2D:
   serializedVersion: 4
@@ -165,3 +152,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3459306096456619291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002002317408720874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eff28f1bab0b9a44899cbb02db5f9b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jogador: {fileID: 530161767588960427, guid: 603a45f846571314cba0fe35dd584285, type: 3}
+  direcao: 0
+  vida: 0
+  vidaatual: 0
