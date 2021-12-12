@@ -179,7 +179,11 @@ public class Inimigo : MonoBehaviour
             intervaloAtaque += Time.deltaTime;
             if (distancia < campodevisao)
             {
+<<<<<<< HEAD
                 if (intervaloAtaque >= 1f)
+=======
+                if (intervaloTiro >= 1.5f)
+>>>>>>> a94d3789605380fea3287900a6f165798bea2316
                 {
                     if (direcao == 0)
                     {

@@ -34,7 +34,7 @@ public class Jogador : MonoBehaviour
     private void Update()
     {
         if (Input.GetKey("z")) {
-
+            if(isGrounded)
             ataque();
         }
         
