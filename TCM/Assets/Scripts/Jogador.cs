@@ -38,7 +38,7 @@ public class Jogador : MonoBehaviour
             if(isGrounded)
             ataqueachefe();
             ataqueainimigos();
-            animacao.Play("Hitting");
+            animacao.SetTrigger("Ataque");
 
         }
         
