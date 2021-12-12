@@ -22,6 +22,7 @@ public class Jogador : MonoBehaviour
     public Transform ataqueCheck;
     float areadoataque = 1.2f;
     public LayerMask CamadaInimigos;
+    public LayerMask CamadaChefe;
 
     public string Cena;
     void Start()
@@ -33,9 +34,11 @@ public class Jogador : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey("z")) {
+        if (Input.GetKeyDown("z")) {
             if(isGrounded)
-            ataque();
+            ataqueachefe();
+            ataqueainimigos();
+
         }
         
             if (tempomorte < 0) {
@@ -111,7 +114,7 @@ public class Jogador : MonoBehaviour
             SceneManager.LoadScene(Cena);
             }
         }
-        void ataque() {
+        void ataqueainimigos() {
         Collider2D[] acertouInimigo = Physics2D.OverlapCircleAll(ataqueCheck.position, areadoataque, CamadaInimigos);
 
         foreach (Collider2D Inimigo in acertouInimigo) {
@@ -119,4 +122,11 @@ public class Jogador : MonoBehaviour
             Inimigo.GetComponent<Inimigo>().morte();
         }
         }
+    void ataqueachefe() {
+        Collider2D[] AcertouChefe = Physics2D.OverlapCircleAll(ataqueCheck.position, areadoataque, CamadaChefe);
+        foreach (Collider2D Chefe in AcertouChefe) {
+
+            Chefe.GetComponent<Inimigo>().PerderVida();
         }
+    }
+  }

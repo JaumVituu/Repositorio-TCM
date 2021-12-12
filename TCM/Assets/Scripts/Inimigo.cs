@@ -14,9 +14,11 @@ public class Inimigo : MonoBehaviour
     float escalaX;
     float escalaY;
     float intervaloAtaque;
-    public float distancia;
+    float distancia;
     public int direcao;
     public int vida;
+    public int vidaatual;
+
     float intervaloDano;
     // Start is called before the first frame update
     void Start()
@@ -24,19 +26,15 @@ public class Inimigo : MonoBehaviour
         imagem = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
         intervaloAtaque = 0f;
-        vida = 100;
         intervaloDano = 1f;
+        vida = 100;
+        vidaatual = vida;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(intervaloDano);
         intervaloDano += Time.deltaTime;
-        if (Input.GetKey("o") && intervaloDano >= 1f)
-        {
-            PerderVida();
-        }
         distancia = Vector2.Distance(transform.position, jogador.position);
         if (gameObject.tag == "Inimigo")
         {
@@ -100,6 +98,7 @@ public class Inimigo : MonoBehaviour
         }
         if (gameObject.tag == "Chefe")
         {
+
             campodevisao = 7.0f;
             if (distancia < campodevisao && distancia > 4)
             {
@@ -142,7 +141,6 @@ public class Inimigo : MonoBehaviour
                     imagem.Play("Veio_parado");
                 }
             }
-         
         }
         else {
             velocidade = 0;
@@ -160,14 +158,16 @@ public class Inimigo : MonoBehaviour
     public void morte() {
         Destroy(gameObject);
     }
-
-    void PerderVida()
-    {   
-        vida -= 10;
-        intervaloDano = 0f;      
-        if (vida == 0)
+    public void PerderVida()
+    {
+        if (gameObject.tag == "Chefe")
         {
-            morte();
+            vidaatual -= 10;
+
+            if (vidaatual <= 0)
+            {
+                morte();
+            }
         }
     }
     void Atacar()
@@ -179,11 +179,8 @@ public class Inimigo : MonoBehaviour
             intervaloAtaque += Time.deltaTime;
             if (distancia < campodevisao)
             {
-<<<<<<< HEAD
-                if (intervaloAtaque >= 1f)
-=======
-                if (intervaloTiro >= 1.5f)
->>>>>>> a94d3789605380fea3287900a6f165798bea2316
+
+                if (intervaloAtaque >= 1.7f)
                 {
                     if (direcao == 0)
                     {

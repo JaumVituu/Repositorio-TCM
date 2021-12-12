@@ -1440,7 +1440,7 @@ GameObject:
   - component: {fileID: 1950763317}
   - component: {fileID: 1950763318}
   - component: {fileID: 1950763319}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Veio_parado1
   m_TagString: Chefe
   m_Icon: {fileID: 0}
@@ -1459,7 +1459,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1593,9 +1593,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jogador: {fileID: 1367225274}
-  distancia: 0
   direcao: 0
   vida: 0
+  vidaatual: 0
 --- !u!1 &2077841596
 GameObject:
   m_ObjectHideFlags: 0
@@ -1692,6 +1692,11 @@ PrefabInstance:
       propertyPath: tempo
       value: 
       objectReference: {fileID: 2077841598}
+    - target: {fileID: 530161767588960423, guid: 603a45f846571314cba0fe35dd584285,
+        type: 3}
+      propertyPath: CamadaChefe.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
     - target: {fileID: 530161767588960427, guid: 603a45f846571314cba0fe35dd584285,
         type: 3}
       propertyPath: m_RootOrder
@@ -1705,7 +1710,7 @@ PrefabInstance:
     - target: {fileID: 530161767588960427, guid: 603a45f846571314cba0fe35dd584285,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.59
+      value: -4.41
       objectReference: {fileID: 0}
     - target: {fileID: 530161767588960427, guid: 603a45f846571314cba0fe35dd584285,
         type: 3}
