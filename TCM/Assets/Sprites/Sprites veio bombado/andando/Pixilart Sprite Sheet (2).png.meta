@@ -4,25 +4,25 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 3222460324994374017
-    second: Veio_andando1
+    second: Pixilart Sprite Sheet (2)_0
   - first:
       213: 1183268048999350121
-    second: Veio_andando2
+    second: Pixilart Sprite Sheet (2)_1
   - first:
       213: -8453925742106403177
-    second: Veio_andando3
+    second: Pixilart Sprite Sheet (2)_2
   - first:
       213: -1047118476507413952
-    second: Veio_andando4
+    second: Pixilart Sprite Sheet (2)_3
   - first:
       213: 3018206452207523744
-    second: Veio_andando5
+    second: Pixilart Sprite Sheet (2)_4
   - first:
       213: -5270701879144342854
-    second: Veio_andando6
+    second: Pixilart Sprite Sheet (2)_5
   - first:
       213: 2943765110930052882
-    second: Veio_andando
+    second: Pixilart Sprite Sheet (2)_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -112,15 +112,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Veio_andando1
+      name: Pixilart Sprite Sheet (2)_0
       rect:
         serializedVersion: 2
         x: 55
         y: 55
         width: 931
         height: 1152
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -133,15 +133,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Veio_andando2
+      name: Pixilart Sprite Sheet (2)_1
       rect:
         serializedVersion: 2
-        x: 1349
+        x: 1354
         y: 94
         width: 910
         height: 1113
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -154,15 +154,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Veio_andando3
+      name: Pixilart Sprite Sheet (2)_2
       rect:
         serializedVersion: 2
-        x: 2626
-        y: 50
+        x: 2636
+        y: 55
         width: 910
         height: 1131
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -175,15 +175,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Veio_andando4
+      name: Pixilart Sprite Sheet (2)_3
       rect:
         serializedVersion: 2
         x: 3914
         y: 94
         width: 913
         height: 1113
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -196,15 +196,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Veio_andando5
+      name: Pixilart Sprite Sheet (2)_4
       rect:
         serializedVersion: 2
         x: 5213
         y: 73
         width: 892
         height: 1134
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -217,15 +217,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Veio_andando6
+      name: Pixilart Sprite Sheet (2)_5
       rect:
         serializedVersion: 2
         x: 6473
         y: 55
         width: 914
         height: 1152
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -238,15 +238,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Veio_andando
+      name: Pixilart Sprite Sheet (2)_6
       rect:
         serializedVersion: 2
         x: 7733
         y: 55
         width: 932
         height: 1152
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

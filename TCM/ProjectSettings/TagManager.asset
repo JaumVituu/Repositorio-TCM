@@ -8,6 +8,9 @@ TagManager:
   - Cachorro
   - Jogador
   - Projetil
+  - Chefe
+  - GolpeBoss
+  - ataqueCheck
   layers:
   - Default
   - TransparentFX

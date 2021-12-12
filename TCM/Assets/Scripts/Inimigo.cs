@@ -13,25 +13,34 @@ public class Inimigo : MonoBehaviour
     Rigidbody2D rb2d;
     float escalaX;
     float escalaY;
-    float intervaloTiro;
+    float intervaloAtaque;
     public float distancia;
     public int direcao;
+    public int vida;
+    float intervaloDano;
     // Start is called before the first frame update
     void Start()
     {
         imagem = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
-        intervaloTiro = 0f;
+        intervaloAtaque = 0f;
+        vida = 100;
+        intervaloDano = 1f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log(intervaloDano);
+        intervaloDano += Time.deltaTime;
+        if (Input.GetKey("o") && intervaloDano >= 1f)
+        {
+            PerderVida();
+        }
         distancia = Vector2.Distance(transform.position, jogador.position);
         if (gameObject.tag == "Inimigo")
         {
-            
+
             campodevisao = 10.0f;
             if (distancia < campodevisao)
             {
@@ -40,7 +49,7 @@ public class Inimigo : MonoBehaviour
                     escalaX = 3.5f;
                     escalaY = 3.5f;
                     rotacao();
-                    imagem.Play("soldado_atento");  
+                    imagem.Play("soldado_atento");
                     direcao = 1;
                 }
                 else
@@ -91,15 +100,15 @@ public class Inimigo : MonoBehaviour
         }
         if (gameObject.tag == "Chefe")
         {
-            campodevisao = 10.0f;
-            if (distancia < campodevisao)
+            campodevisao = 7.0f;
+            if (distancia < campodevisao && distancia > 4)
             {
-
+                intervaloAtaque = 0;
                 if (transform.position.x < jogador.position.x)
                 {
                     velocidade = 3.0f;
-                    escalaX = 0.4f;
-                    escalaY = 0.4f;
+                    escalaX = 0.2f;
+                    escalaY = 0.2f;
                     movimento();
                     rotacao();
                     imagem.Play("Veio_andando");
@@ -107,21 +116,41 @@ public class Inimigo : MonoBehaviour
                 else
                 {
                     velocidade = -3.0f;
-                    escalaX = -0.4f;
-                    escalaY = 0.4f;
+                    escalaX = -0.2f;
+                    escalaY = 0.2f;
                     movimento();
                     rotacao();
                     imagem.Play("Veio_andando");
                 }
 
             }
-            else {
-                velocidade = 0;
-                movimento();
-                imagem.Play("Veio_parado");
+            if (distancia <= 3)
+            {
+                
+                
+                intervaloAtaque += Time.deltaTime;
+                if (intervaloAtaque >= 2f)
+                {
+                    imagem.Play("Veio_batendo");
+                    if (intervaloAtaque >= 4f)
+                    {
+                        intervaloAtaque = 0;
+                    }
+                }
+                else
+                {
+                    imagem.Play("Veio_parado");
+                }
             }
+         
+        }
+        else {
+            velocidade = 0;
+            movimento();
+            imagem.Play("Veio_parado");
         }
     }
+        
     void movimento() {
         rb2d.velocity = new Vector2(velocidade, 0);
     }
@@ -131,16 +160,26 @@ public class Inimigo : MonoBehaviour
     public void morte() {
         Destroy(gameObject);
     }
+
+    void PerderVida()
+    {   
+        vida -= 10;
+        intervaloDano = 0f;      
+        if (vida == 0)
+        {
+            morte();
+        }
+    }
     void Atacar()
     {
         float distancia = Vector2.Distance(transform.position, jogador.position);
         campodevisao = 10.0f;
         if (gameObject.tag == "Inimigo")
         {    
-            intervaloTiro += Time.deltaTime;
+            intervaloAtaque += Time.deltaTime;
             if (distancia < campodevisao)
             {
-                if (intervaloTiro >= 1f)
+                if (intervaloAtaque >= 1f)
                 {
                     if (direcao == 0)
                     {
@@ -148,15 +187,15 @@ public class Inimigo : MonoBehaviour
                         float projetilY = 1.7f;
                         Instantiate(TiroPrefab, transform.position + new Vector3(0, projetilY, 0), Quaternion.identity);
                         Debug.Log("Resetou");
-                        intervaloTiro = 0f;
+                        intervaloAtaque = 0f;
                     }                    
                 }
             }
             else
             {
-                intervaloTiro = 0f;
+                intervaloAtaque = 0f;
             }
         }
     }
-
+    
 }
