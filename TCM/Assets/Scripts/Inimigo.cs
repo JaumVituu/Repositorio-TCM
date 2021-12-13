@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Inimigo : MonoBehaviour
 {
@@ -18,8 +19,9 @@ public class Inimigo : MonoBehaviour
     public int direcao;
     public int vida;
     public int vidaatual;
-
+    bool ChefeVivo = true;
     float intervaloDano;
+    public string Cena;
     // Start is called before the first frame update
     void Start()
     {
@@ -98,8 +100,7 @@ public class Inimigo : MonoBehaviour
         }
         if (gameObject.tag == "Chefe")
         {
-
-            campodevisao = 10.0f;
+            campodevisao = 100.0f;
             if (distancia < campodevisao && distancia > 4)
             {
                 intervaloAtaque = 0;
@@ -112,7 +113,7 @@ public class Inimigo : MonoBehaviour
                     rotacao();
                     imagem.Play("Veio_andando");
                 }
-                else
+                else if(transform.position.x > jogador.position.x)
                 {
                     velocidade = -3.0f;
                     escalaX = -0.2f;
@@ -167,6 +168,7 @@ public class Inimigo : MonoBehaviour
             if (vidaatual <= 0)
             {
                 morte();
+                SceneManager.LoadScene(Cena);
             }
         }
     }

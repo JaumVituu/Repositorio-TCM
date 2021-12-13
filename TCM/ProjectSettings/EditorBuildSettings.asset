@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 3ff6043b51ff1954d93193b5cb356e4b
+  - enabled: 1
+    path: Assets/Scenes/Venceu.unity
+    guid: 43efa0393eef8df4994a27a384f2eb22
   m_configObjects: {}
