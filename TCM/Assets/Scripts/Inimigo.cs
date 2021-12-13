@@ -39,21 +39,21 @@ public class Inimigo : MonoBehaviour
         if (gameObject.tag == "Inimigo")
         {
 
-            campodevisao = 10.0f;
+            campodevisao = 15.0f;
             if (distancia < campodevisao)
             {
                 if (transform.position.x < jogador.position.x)
                 {
-                    escalaX = 3.5f;
-                    escalaY = 3.5f;
+                    escalaX = 4.5f;
+                    escalaY = 4.5f;
                     rotacao();
                     imagem.Play("soldado_atento");
                     direcao = 1;
                 }
                 else
                 {
-                    escalaX = -3.5f;
-                    escalaY = 3.5f;
+                    escalaX = -4.5f;
+                    escalaY = 4.5f;
                     rotacao();
                     imagem.Play("soldado_atento");
                     direcao = 0;
@@ -67,7 +67,7 @@ public class Inimigo : MonoBehaviour
         }
         if (gameObject.tag == "Cachorro")
         {
-            campodevisao = 6.0f;
+            campodevisao = 10.0f;
             if (distancia < campodevisao)
             {
                 if (transform.position.x < jogador.position.x)
@@ -99,7 +99,7 @@ public class Inimigo : MonoBehaviour
         if (gameObject.tag == "Chefe")
         {
 
-            campodevisao = 7.0f;
+            campodevisao = 10.0f;
             if (distancia < campodevisao && distancia > 4)
             {
                 intervaloAtaque = 0;
